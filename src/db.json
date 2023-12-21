@@ -1,0 +1,38 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Teclado",
+      "description": "Um teclado resistente e confortável, ideal para digitação rápida e eficiente.",
+      "categoryId": 1,
+      "image": "https://cdn.dooca.store/1841/products/teclado-mecanico-zot-1.jpg",
+      "price": 50
+    },
+    {
+      "id": 2,
+      "name": "Mouse",
+      "description": "Um mouse ergonômico e preciso, perfeito para longas horas de trabalho ou jogos.",
+      "categoryId": 1,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Laser_mouse.jpg",
+      "price": 60
+    },
+    {
+      "id": 3,
+      "name": "Smartphone",
+      "description": "Um smartphone avançado com câmera de alta resolução, desempenho rápido e design elegante.",
+      "categoryId": 2,
+      "image": "https://images.kabum.com.br/produtos/fotos/435644/smartphone-samsung-galaxy-a54-5g-128gb-8gb-ram-octa-core-camera-tripla-de-50mp-tela-infinita-de-6-4-branco-sm-a546ezwlzto_1678374103_g.jpg",
+      "price": 700
+    }
+  ],  
+  "categories": [
+    {
+      "id": 1,
+      "description": "Informática"
+    },
+    {
+      "id": 2,
+      "description": "Telefonia"
+    }
+  ]
+}

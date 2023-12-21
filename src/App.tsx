@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Products from "./pages/products";
+import ProductDetails from "./pages/products/details";
+import { CartProvider } from "./contexts/cartContext";
+import { CssBaseline } from "@mui/material";
+import Menu from "./shared/menu";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CssBaseline />
+      <CartProvider> 
+        <Menu />       
+        <Routes>
+          <Route path="/" element={<Products />} />
+          <Route path="/products/:id" element={<ProductDetails />} />
+        </Routes>
+      </CartProvider>
     </div>
   );
 }
