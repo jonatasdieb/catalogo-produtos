@@ -20,7 +20,7 @@ const Filter: React.FC<IFilterProps> = ({
 }) => {
   return (
     <Grid container spacing={2}>
-      <Grid item xs={2}>
+      <Grid item xs={12} md={6} lg={2}>
         <FormControl variant="outlined" fullWidth margin="normal">
           <InputLabel>Filtrar por</InputLabel>
           <Select
@@ -34,7 +34,7 @@ const Filter: React.FC<IFilterProps> = ({
         </FormControl>
       </Grid>
 
-      <Grid item xs={10}>
+      <Grid item xs={12}  md={6} lg={10}>
         {searchBy === "name" ? (
           <TextField
             label="Pesquisar por nome"
